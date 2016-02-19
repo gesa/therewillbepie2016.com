@@ -1,0 +1,69 @@
+#################################################
+# Config: Development                           #
+#################################################
+# (production settings go in _config.build.yml) #
+
+#############
+# Meta info #
+#############
+
+name: 'Colette & Mark | 10/29/2016'
+url: 'http://therewillbepie2016.com'
+description: 'Tying the knot on a love grown from Pi Day.'
+timezone: America/Los_Angeles
+favicon: /favicon.ico
+googleanalytics: UA-26097728-8
+
+share:
+  image: /path/to/image.jpg
+  width: 1200 # Facebook recommends minimum of 1200 x 630
+  height: 630
+  title: also share title can be different from search engine/browser title
+  description: Facebook share text can be different from search engine text
+
+#############
+# Authoring #
+#############
+
+future: true
+show_drafts: true
+permalink: pretty
+
+collections:
+  root:
+    permalink: /:title
+    output: true
+    layout: none
+  static:
+    permalink: /:path/
+    output: true
+
+defaults:
+  - scope:
+      path: ''
+      type: root
+    values:
+      layout: none
+  - scope:
+      path: ''
+      type: static
+    values:
+      layout: default
+  - scope:
+      path: ''
+    values:
+      layout: 'default'
+
+#############
+# Compiling #
+#############
+
+exclude: ['img']
+keep_files: ['img', 'js', 'css']
+
+highlighter: rouge
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  smart_quotes: ['apos', 'apos', 'quot', 'quot']
