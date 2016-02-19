@@ -207,7 +207,6 @@ module.exports = function (grunt) {
         'cachebreaker:deploy'
       ]
     }
-
   });
 
   grunt.registerTask('dev', [

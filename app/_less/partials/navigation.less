@@ -1,0 +1,29 @@
+body > nav {
+  background-color: @blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  a {
+    color: @white;
+    display: block;
+    font-size: 1.3rem;
+    padding: 1.3rem 0 1rem;
+    transition: background-color 700ms;
+    text-align: center;
+    width: 33%;
+
+    @media screen and (min-width: @small-tablet) {
+      width: 14%;
+    }
+
+    &:link, &:visited {
+      text-decoration: none;
+    }
+
+    &:hover, &:active, &:focus {
+    background-color: darken(@blue, 10%);
+    }
+  }
+}
