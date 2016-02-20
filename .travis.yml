@@ -5,24 +5,25 @@ sudo: false
 cache:
   bundler: true
   directories:
-  - node_modules
   - vendor
 before_install:
-- rvm install `cat .ruby-version`
+  - rvm install `cat .ruby-version`
 install:
-- npm install
+  - npm install
 script:
-- npm run-script build
+  - npm run-script build
 env:
-- CXX=g++-4.8
+  - CXX=g++-4.8
 addons:
   apt:
     sources:
-    - ubuntu-toolchain-r-test
+      - ubuntu-toolchain-r-test
     packages:
-    - g++-4.8
+      - g++-4.8
 deploy:
+  skip_cleanup: true
   provider: s3
+  region: us-west-1
   access_key_id: AKIAJKOBELDLY52FNPGA
   secret_access_key:
     secure: BEV9kpvIKdlknmG73QaJjIzDfw1EjwVeAFKrE/MIpOpc2LsI/mRC/9iR4VnjH/g8yTc2jvnvo2Ug1o3ngSkpN1m6vxhsdpzX4qIPFV9XI7AABUIJLrRCcNbSMQEv+NLCt8XYB1TyY8Sikp7PDYjA/P7xqIPOWi0WVMUBn79PV5fiaUkNk32NjD9tLaKG9FT4qY7W4gfG14LnA9gV9v8Lpj12Qg8+HpOWAqKeyd5BOJ5EGtHAQtpLV2E/csChKQnTiWxzrqDFQKiMcJnN+evVu/Fkb5/fMvtLkNkSM+B2joWjtXa81TAz83fc3LfCKP2VOHCbS7kq2+ZwhjgI42ad2eTjr2mJ8Qvsd0l1+IAJdyaFEI+zEmA3QqDEHaXTT3uZGUOT7AptiuMOZY2TwPQ1fJ0d/pUMXBU86kM91oW9DMYBSeXMrA3VfwoNTLC7scdNuVlNZZjju4WADg7peXl/IX8u+l4zTIc19YUrvGyl8tOFnIne4LW+UIfEMVcwqhKxme8vsguZjvVN0WWwPUTpxuGSSXzWpoDKBXM0RR4VDAk5wP3xug8LtCtnPyTB+/wTpJDVaOVhTQDa1MfujNBNp0Vh5OPg4Xr7f6nRrACdyqUjndQv/a0eifk2W5dCpHHio8OSJVkG80lQtEEcHHGlNDeNthK8CeDyHhgm7/3cUUk=

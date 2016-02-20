@@ -3,27 +3,80 @@ body > header {
   background-position: center 42%;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  display: flex;
-  justify-content: space-between;
+  border-bottom: @rust solid 3px;
+  border-top: @rust solid 3px;
+
+  @media screen and (min-width: @small-tablet) {
+    background-position: center 40%;
+  }
+
+  a {
+    display: flex;
+    justify-content: space-between;
+
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
+  }
 
   div {
-    background: fade(white, 90%);
+    background: fade(@white, 85%);
     border: solid @rust 0;
     color: @rust;
-    line-height: 0.9;
+    line-height: 0.85;
     padding: 2rem 1rem;
+    width: 9.4rem;
+
+    @media screen and (min-width: @large-tablet) {
+      width: 10.5rem;
+    }
+
+    @media screen and (min-width: @small-desktop) {
+      width: 11.3rem;
+    }
 
     &:first-child {
       border-right-width: 3px;
-      font-size: 1.9rem;
-      line-height: 0.9;
-      padding-top: 2.5rem;
-      width: 57px;
+      font-size: 2.6rem;
+      padding: 2rem 2.2rem 0;
+      position: relative;
+      z-index: 10;
+
+      @media screen and (min-width: @large-tablet) {
+        font-size: 3.2rem;
+      }
+
+      @media screen and (min-width: @small-desktop) {
+        font-size: 3.6rem;
+        padding: 6rem 2.2rem 5.8rem 2.3rem;
+      }
+
+      &::before {
+        bottom: 0;
+        color: @blue;
+        content: '\2665';
+        font-size: 2.125em;
+        left: 0;
+        opacity: 0.3;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 36%;
+      }
     }
 
     &:last-child {
       border-left-width: 3px;
-      width: 9.4rem;
+
+      @media screen and (min-width: @large-tablet) {
+        font-size: 1.9rem;
+        padding: 2.4rem 0.8rem 1.8rem;
+      }
+
+      @media screen and (min-width: @small-desktop) {
+        font-size: 2.1rem;
+        padding-top: 6rem;
+      }
     }
   }
 

@@ -1,5 +1,18 @@
-.default {
+article {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.625em;
+    text-align: left;
+  }
 
+  header {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  time {
+    color: @blue;
+  }
 }
 
 .content {
@@ -15,11 +28,10 @@
     }
     img {
       background-color: #fff;
-      box-shadow: 0 10px 6px -6px #777;
+      box-shadow: 0 1rem 0.6rem -0.6rem #777;
       border: solid 1px #777;
       border-radius: 2px;
       padding: 4px;
     }
-
   }
 }

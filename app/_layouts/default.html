@@ -3,11 +3,25 @@
 <head>
 {% include partials/meta.html %}
 </head>
-<body class="default">
+<body class="default {{ page.categories | join: ' ' }}">
 {% include partials/header.html %}
 {% include partials/navigation.html %}
 <main class="content">
-  {{ content }}
+  {% unless page.identifier == 'home' %}
+  <article>
+    <header>
+      <h1>{{ page.title }}</h1>
+      {% if page.categories contains 'updates' %}
+      <a href="{{ post.url }}">
+        <time datetime="{{ page.date | date_to_rfc822 }}">{{ page.date | date: "%B %d" }}</time>
+      </a>
+      {% endif %}
+    </header>
+    {% endunless %}
+    {{ content }}
+  {% unless page.identifier == 'home' %}
+  </article>
+    {% endunless %}
 </main>
 {% include partials/footer.html %}
 {% include partials/scripts.html %}

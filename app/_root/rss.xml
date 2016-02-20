@@ -1,0 +1,5 @@
+---
+permalink: updates/rss.xml
+---
+
+{% include helpers/rss.xml subdirectory='updates' feed_title='Wedding updates' %}

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.name }}</title>
+    <link>{{ site.url }}/{{ include.subdirectory }}/</link>
+    <description>{{ include.feed_title }}</description>
+    <language>en-US</language>
+    <generator>Jekyll 2.0</generator>
+    <docs>http://validator.w3.org/feed/docs/rss2.html</docs>
+    <image>
+      <url>{{ site.url }}/img/share.jpg</url>
+      <title>{{ site.name }}</title>
+      <link>{{ site.url }}/{{ include.subdirectory }}/</link>
+      <width>1200</width>
+      <height>630</height>
+    </image>
+    <atom:link href="{{ site.url }}/{{ include.subdirectory }}/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    {% for post in site.categories.[include.subdirectory] %}{% unless post.published == false %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <description>{{ post.excerpt | strip_html}}</description>
+      <category>{{ post.category }}</category>
+      <guid>{{ site.url }}{{ post.url }}</guid>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <source url="{{ site.url }}/{{ include.subdirectory }}/rss.xml">{{ include.feed_title }}</source>
+    </item>
+    {% endunless %}{% endfor %}
+  </channel>
+</rss>

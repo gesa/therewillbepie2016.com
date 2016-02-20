@@ -11,15 +11,14 @@ name: 'Colette & Mark | 10/29/2016'
 url: 'http://therewillbepie2016.com'
 description: 'Tying the knot on a love grown from Pi Day.'
 timezone: America/Los_Angeles
-favicon: /favicon.ico
 googleanalytics: UA-26097728-8
 
 share:
-  image: /path/to/image.jpg
-  width: 1200 # Facebook recommends minimum of 1200 x 630
+  image: /img/share.jpg
+  width: 1200
   height: 630
-  title: also share title can be different from search engine/browser title
-  description: Facebook share text can be different from search engine text
+  title: Colette & Mark are tying the knot!
+  description: Take a second to say congratulations.
 
 #############
 # Authoring #
@@ -27,14 +26,13 @@ share:
 
 future: true
 show_drafts: true
-permalink: pretty
+permalink: /:categories/:month/:day/:title/
 
 collections:
   root:
     permalink: /:title
     output: true
-    layout: none
-  static:
+  static_pages:
     permalink: /:path/
     output: true
 
@@ -46,7 +44,7 @@ defaults:
       layout: none
   - scope:
       path: ''
-      type: static
+      type: static_pages
     values:
       layout: default
   - scope:

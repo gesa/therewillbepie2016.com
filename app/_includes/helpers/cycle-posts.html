@@ -1,11 +1,20 @@
 {% assign counter = 0 %}
-<ol>
+<ol class="posts-list">
   {% for post in site.categories[include.category] %}
   <li>
-    <a href="{{ post.url }}">
-      {{ post.title }}
-      <time datetime='{{ post.date | date:"%FT%H:%M:$S" }}'>{{ post.date | date:"%B %d, %Y" }}</time>
-    </a>
+    <div class="meta">
+      <a href="{{ post.url }}">
+        <h2>
+          {{ post.title }}
+        </h2>
+      </a>
+      <a href="{{ post.url }}">
+        <time datetime='{{ post.date | date:"%FT%H:%M:$S" }}'>
+          {{ post.date | date:"%B %d, %Y" }}
+        </time>
+      </a>
+    </div>
+    {{ post.excerpt }}
   </li>
   {% assign counter = counter | plus:'1' %}
   {% if counter > include.limit %}
