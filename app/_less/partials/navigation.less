@@ -6,6 +6,10 @@ body > nav {
   justify-content: space-around;
   margin-bottom: 2rem;
 
+  @media screen and (min-width: @small-phone) {
+    align-items: center;
+  }
+
   @media screen and (min-width: @large-phone) {
     justify-content: center;
   }
@@ -20,11 +24,21 @@ body > nav {
     text-shadow: 0 1px 0 @black;
     min-width: 25%;
 
+    @media screen and (min-width: @small-phone) {
+      font-size: 1.6rem;
+    }
+
     @media screen and (min-width: @large-phone) {
       max-width: 12rem;
       min-width: 0;
       width: 14%;
     }
+
+    @media screen and (min-width: @small-tablet) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
 
     &:link, &:visited {
       text-decoration: none;
