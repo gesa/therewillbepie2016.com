@@ -51,6 +51,64 @@ defaults:
       path: ''
     values:
       layout: 'default'
+prose:
+  rooturl: 'app'
+  ignore:
+    - '_data'
+    - '_includes'
+    - '_js'
+    - '_layouts'
+    - '_less'
+    - 'favicon.ico'
+  siteurl: 'http://therewillbepie2016.com/'
+  media: 'app/img'
+  metadata:
+    site/updates/_posts:
+      - name: title
+        field:
+          element: text
+          label: Title
+          placeholder: 'My Blog Post Title'
+          help: 'This is the title that appears at the top of the tab or on Google.'
+      - name: description
+        field:
+          element: textbox
+          label: 'Description (optional)'
+          help: 'The description text that appears on Google. (sometimes just the first paragraph of your post).'
+          type: 'text'
+      - name: share_title
+        field:
+          element: text
+          label: 'Share Title (optional)'
+          placeholder: 'You won’t believe what happens next'
+          help: 'If you want a different title to appear on facebook or twitter.'
+      - name: share_description
+        field:
+          element: textbox
+          label: 'Share Description (optional)'
+          placeholder: 'You won’t believe what happens next'
+          help: 'If you want a different description to appear on facebook or twitter.'
+      - name: 'share_image'
+        field:
+          element: 'text'
+          label: 'Share image (optional)'
+          help: 'Use the image insert functionality to upload a picture, then paste the file name here. (make sure you delete it from your post, too, if you don’t want it there!)'
+          placeholder: 'your-filename.jpg'
+          type: 'text'
+      - name: 'share_width'
+        field:
+          element: 'text'
+          label: 'Share image width (optional)'
+          help: 'Whole number, no units.'
+          placeholder: '1200'
+          type: 'text'
+      - name: 'share_height'
+        field:
+          element: 'text'
+          label: 'Share image height (optional)'
+          help: 'Whole number, no units.'
+          placeholder: '630'
+          type: 'text'
 
 #############
 # Compiling #
