@@ -3,7 +3,7 @@
 <head>
 {% include partials/meta.html %}
 </head>
-<body class="default {{ page.categories | join: ' ' }}">
+<body class="default {{ page.categories | join: ' ' }} {{ page.identifier }}">
 {% include partials/header.html %}
 {% include partials/navigation.html %}
 <main class="content">
