@@ -8,7 +8,7 @@
 #############
 
 name: 'Colette & Mark • 10/29/2016'
-url: 'http://therewillbepie2016.com'
+baseurl: 'http://therewillbepie2016.com'
 description: 'Tying the knot on a love grown from Pi Day.'
 timezone: America/Los_Angeles
 googleanalytics: UA-26097728-8
