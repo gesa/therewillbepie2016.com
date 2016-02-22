@@ -51,6 +51,7 @@ defaults:
       path: ''
     values:
       layout: 'default'
+
 prose:
   rooturl: 'app'
   ignore:
@@ -59,17 +60,18 @@ prose:
     - '_js'
     - '_layouts'
     - '_less'
+    - '_root'
     - 'favicon.ico'
   siteurl: 'http://therewillbepie2016.com/'
   media: 'app/img'
   metadata:
-    site/updates/_posts:
+    app/updates:
       - name: title
         field:
           element: text
           label: Title
           placeholder: 'My Blog Post Title'
-          help: 'This is the title that appears at the top of the tab or on Google.'
+          help: 'This is the title that appears at the top of the page.'
       - name: description
         field:
           element: textbox
