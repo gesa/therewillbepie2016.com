@@ -23,7 +23,7 @@ body > header {
     border: solid @rust 0;
     color: @rust;
     line-height: 0.85;
-    padding: 2rem 1rem;
+    padding: 2.3rem 1rem;
     width: 9.4rem;
 
     @media screen and (min-width: @large-tablet) {
@@ -34,10 +34,26 @@ body > header {
       width: 11.3rem;
     }
 
+    span {
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .ampersand {
+      font-family: @sansFontFamily;
+    }
+
     &:first-child {
       border-right-width: 3px;
+      font-family: @displayFontFamily;
       font-size: 2.6rem;
-      padding: 2rem 2.2rem 0;
+      padding: 1rem 2.2rem;
       position: relative;
       z-index: 10;
 
@@ -50,18 +66,6 @@ body > header {
         padding: 6rem 2.2rem 5.8rem 2.3rem;
       }
 
-      &::before {
-        bottom: 0;
-        color: @blue;
-        content: '\2665';
-        font-size: 2.125em;
-        left: 0;
-        opacity: 0.3;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        top: 36%;
-      }
     }
 
     &:last-child {
@@ -82,17 +86,5 @@ body > header {
   span {
     display: block;
     text-align: center;
-    &:first-child {
-      text-align: left;
-      &::after {
-        content: '/'
-      }
-    }
-    &:last-child {
-      text-align: right;
-      &::before {
-        content: '/'
-      }
-    }
   }
 }
