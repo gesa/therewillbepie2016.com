@@ -1,0 +1,42 @@
+.wedding-party {
+  dt {
+    width: 29rem;
+    margin: 0 auto;
+
+    @media screen and (min-width: @small-phone) {
+      float: left;
+      margin-right: 1.5rem;
+      width: 20rem;
+    }
+
+    @media screen and (min-width: @large-phone) {
+      width: 33%;
+    }
+  }
+
+  img {
+    border: @blue solid 3px;
+    border-radius: 3px;
+  }
+
+  dd {
+    &:nth-child(2n) {
+      margin-bottom: 2rem;
+
+      @media screen and (min-width: @large-phone) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    margin: 4rem 0;
+    border: none;
+    border-bottom: @rust solid 2px;
+  }
+}
