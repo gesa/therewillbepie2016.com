@@ -9,3 +9,5 @@ Mark definitely impressed her… with his notorious lateness, even at his own ho
 Mark discovered the most beautiful, compassionate, and caring person ever. Her ability to open her heart and express herself at all times was more than inspiring. She truly brought out the best in him and allowed him to be himself.
 
 Colette fell for Mark’s huge heart, outgoing personality, and his amazing cooking and car­washing skills. It also helped that he was handsome… and living somewhere with a pool and hot tub. He loved her like she’d never been loved before.
+
+{% include partials/gallery.html %}

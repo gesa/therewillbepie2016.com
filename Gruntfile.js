@@ -24,7 +24,7 @@ module.exports = function (grunt) {
     },
 
     copy: {
-      assets: {
+      images: {
         files: [
           {
             expand: true,
@@ -34,9 +34,16 @@ module.exports = function (grunt) {
             dest: '<%= site.dist %>'
           }
         ]
+      },
+      gallery: {
+        files: [{
+          expand: true,
+          cwd: '../../node_modules/blueimp-gallery/img',
+          src: ['**/*'],
+          dest: '<%= site.dist %>/img/gallery/controls'
+        }]
       }
     },
-
     less: {
       css: {
         options: {
@@ -123,6 +130,7 @@ module.exports = function (grunt) {
         files: [
           {
             src: [
+              'node_modules/blueimp-gallery/js/blueimp-gallery.min.js',
               '<%= site.app %>/_js/modules/**/*.js',
               '<%= site.app %>/_js/pages/**/*.js',
               '<%= site.app %>/_js/core.js'
@@ -166,7 +174,7 @@ module.exports = function (grunt) {
       },
       assets: {
         files: ['<%= site.app %>/img/**/*'],
-        tasks: ['copy']
+        tasks: ['copy:images']
       },
       jekyll: {
         files: [
@@ -197,7 +205,8 @@ module.exports = function (grunt) {
 
     concurrent: {
       compile: [
-        'copy:assets',
+        'copy:images',
+        'copy:gallery',
         'less:css',
         'concat:scripts'
       ],
