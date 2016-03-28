@@ -6,7 +6,6 @@ published: true
 
 
 
-_**All times and details TBD**_
 
 Friday, October 28, 2016
 
