@@ -7,6 +7,7 @@ published: true
 
 
 
+
 Friday, October 28, 2016
 
 Welcome Fiesta 3:00 - 6:00 PM
@@ -18,7 +19,7 @@ Stop by anytime to have a beer, have some tacos, and say hi to the bride and gro
 
 Saturday, October 29, 2016
 
-Ceremony starts at 4:15 PM
+Ceremony starts at 4:00 PM
 [Pine Hills Lodge](http://www.pinehillslodge.com/)
 2960 La Posada Way
 Julian, CA 92036
