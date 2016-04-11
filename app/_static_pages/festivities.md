@@ -9,6 +9,7 @@ published: true
 
 
 
+
 ### Friday, October 28, 2016
 
 Welcome Fiesta 3:00 - 6:00 PM
@@ -17,7 +18,7 @@ Welcome Fiesta 3:00 - 6:00 PM
 6190 Fairmount Ave  
 San Diego, CA 92120  
 
-Stop by anytime to have a beer, have some tacos, and say hi to the bride and groom.
+The groom's parents, Jim and Diane, invite all our guests to stop by anytime to grab a beer, have some tacos, and say hi to the bride and groom.
 
 ### Saturday, October 29, 2016
 
