@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-{% include partials/meta.html %}
+  {% include partials/meta.html %}
 </head>
 <body class="default {{ page.categories | join: ' ' }} {{ page.class }}">
 {% include partials/header.html %}
@@ -13,15 +13,17 @@
       <h1>{{ page.title }}</h1>
       {% if page.categories contains 'updates' %}
       <a href="{{ post.url }}">
-        <time datetime="{{ page.date | date_to_rfc822 }}">{{ page.date | date: "%B %d" }}</time>
+        <time datetime="{{ page.date | date_to_rfc822 }}">
+          {{ page.date | date: "%B %d" }}
+        </time>
       </a>
       {% endif %}
     </header>
     {% endunless %}
     {{ content }}
-  {% unless page.identifier == 'home' %}
+    {% unless page.identifier == 'home' %}
   </article>
-    {% endunless %}
+  {% endunless %}
 </main>
 {% include partials/footer.html %}
 {% include partials/scripts.html %}

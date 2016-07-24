@@ -1,8 +1,3 @@
-{% capture title %}{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}{% endcapture %}
-{% capture description %}{% if page.description and page.description != '' %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
-
-{% capture fbtitle %}{% if page.share_title and page.share_title != '' %}{{ page.share_title }}{% elsif site.share_title %}{{ site.share_title }}{% else %}{{ title }}{% endif %}{% endcapture %}
-{% capture fbdescription %}{% if page.share_description and page.share_description != '' %}{{ page.share_description }}{% elsif site.share_description %}{{ site.share_description }}{% else %}{{ description }}{% endif %}{% endcapture %}
 {% capture image %}{{ site.baseurl }}{% if page.share_image and page.share_image != '' %}/img/{{ page.share_image }}{% else %}/img/share.jpg{% endif %}{% endcapture %}
 
 <meta charset="utf-8">
@@ -10,14 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>{% if page.title %}• {{ page.title }} {% endif %}• {{ site.name }} •</title>
-<meta name="description" content="{{ description }}">
+<meta name="description" content="{{ page.description | default: site.description }}">
 
 <!-- *** social meta *** -->
   <!-- facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="{{ site.name }}"/>
-  <meta property="og:title" content="{{ fbtitle }}" />
-  <meta property="og:description" content="{{ fbdescription }}" />
+  <meta property="og:title" content="{{ page.share_title | default: site.share_title | default: page.title | default: site.title }}" />
+  <meta property="og:description" content="{{ page.share_description | default: site.share_description | default: page.description  | default: site.description }}" />
   <meta property="og:image" content="{{ image }}" />
  {% if page.share_image and page.share_width and page.share_height and page.share_image != '' and page.share_width != '' and page.share_height != '' %}
   <meta property="og:image:width" content="{{ page.share_width }}"/>
@@ -33,16 +28,16 @@
   <!-- twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ description }}"/>
+  <meta name="twitter:description" content="{{ page.description | default: site.description}}"/>
   <meta name="twitter:image:src" content="{{ image }}">
   <meta name="twitter:domain" content="{{ site.baseurl | remove:'http://' | remove:'https://' }}">
 
   <!-- google+ -->
   <meta itemprop="name" content="{{ title }}">
-  <meta itemprop="description" content="{{ description }}">
+  <meta itemprop="description" content="{{ page.description | site.description }}">
   <meta itemprop="image" content="{{ image }}">
 <!-- /*** social meta *** -->
 
 
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.ico"/>
+<link rel="icon" type="image/png" href="/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="/css/core.css" />
