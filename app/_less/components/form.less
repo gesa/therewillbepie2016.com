@@ -1,0 +1,57 @@
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+input, select {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  min-width: 24rem;
+  max-width: 40rem;
+  padding: 0.7rem;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: @linkColor;
+  border-radius: 3px;
+  border: none;
+  color: @white;
+  cursor: pointer;
+  margin: 0;
+  transition: background-color 250ms;
+  width: auto;
+
+  &:hover {
+    background-color: @linkColorHover;
+  }
+}
+
+.indicates-required {
+  float: right;
+}
+
+.required::after, .indicates-required::before {
+  color: @rust;
+  content: '*';
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+
+.help-text {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 0.6rem;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+}
+
+fieldset {
+  border: solid @rust 2px;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
