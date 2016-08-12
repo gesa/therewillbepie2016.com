@@ -9,8 +9,9 @@ body > nav {
     align-items: center;
   }
 
-  @media screen and (min-width: @large-phone) {
-    justify-content: center;
+  @media screen and (min-width: @small-tablet) {
+    flex-wrap: nowrap;
+    justify-content: space-around;
   }
 
   a {
@@ -28,16 +29,19 @@ body > nav {
       font-size: 1.6rem;
     }
 
-    @media screen and (min-width: @large-phone) {
+    @media screen and (min-width: @small-tablet) {
       flex-basis: auto;
-      max-width: 12rem;
+      flex-grow: 2;
+      font-size: 1.4rem;
+      max-width: 100%;
       min-width: 0;
-      width: 14%;
+      padding-right: 0;
+      padding-left: 0;
+      width: 14rem;
     }
 
-    @media screen and (min-width: @small-tablet) {
-      padding-left: 0;
-      padding-right: 0;
+    @media screen and (min-width: @large-tablet) {
+      font-size: 1.6rem;
     }
 
 

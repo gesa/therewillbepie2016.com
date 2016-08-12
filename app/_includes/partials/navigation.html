@@ -1,6 +1,5 @@
 <nav role="navigation">
-  {% for link in site.static_pages %}{% unless link.url == '/rsvp/' %}
-  <a href="{{ link.url }}"{% if page.url contains link.url %} class="active"{% endif %}>{{ link.title }}</a>{% endunless %}{% endfor %}
-  <a href="/rsvp/"{% if page.url contains 'rsvp' %} class="active"{% endif %}>R.S.V.P.</a>
+  {% for link in site.static_pages %}
+  <a href="{{ link.url }}"{% if page.url contains link.url %} class="active"{% endif %}>{{ link.title }}</a>{% endfor %}
   <a href="/updates/"{% if page.url contains 'updates' %} class="active"{% endif %}>Updates</a>
 </nav>
