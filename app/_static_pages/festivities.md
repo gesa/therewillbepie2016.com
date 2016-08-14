@@ -22,7 +22,7 @@ The groom's parents, Jim and Diane, invite all our guests to stop by anytime to 
 
 ### Saturday, October 29, 2016
 
-Ceremony starts at 4:00 PM
+Ceremony starts at 4:15 PM
 
 [Pine Hills Lodge](http://www.pinehillslodge.com/)  
 2960 La Posada Way  
