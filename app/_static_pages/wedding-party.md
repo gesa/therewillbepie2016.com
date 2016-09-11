@@ -1,6 +1,7 @@
 ---
 title: Wedding Party
 class: wedding-party
+published: true
 ---
 
 ![David][00]
@@ -23,7 +24,7 @@ class: wedding-party
 
 ![Katie ][04]
 : ### Katie
-  Katie and Colette first became friends sophomore year of high school when Brother Benedict gave them a pack of signed hall passes to use at their discretion during homeroom. After countless hours of high school adventures together, they moved away from home, but they have always managed to stay close and visit each others new hometowns. During the summer of 2015, Colette interned in Boulder and was lucky enough to spend most weekends with Katie grilling in the backyard, chatting on the patio, hiding from a bat in Katie’s house, camping and hiking in Utah—all definite highlights of Colette’s Colorado adventure.
+  Katie and Colette first became friends sophomore year of high school when Brother Benedict gave them a pack of signed hall passes to use at their discretion during homeroom. After countless hours of high school adventures together, they moved away from home, but they have always managed to stay close and visit each others new hometowns. During the summer of 2016, Colette interned in Boulder and was lucky enough to be roommates with Katie and her husband, where they spent many hours grilling in the backyard, chatting on the patio, hiding from a bat in Katie’s house, camping and hiking in Utah—all definite highlights of Colette’s Colorado adventure.
 
 ![Moira][05]
 : ### Moira
