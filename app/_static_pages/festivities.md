@@ -30,7 +30,7 @@ Julian, CA 92036
 
 Reception to follow.
 
-A few notes on attire. Weather permitting, the ceremony will take place outside, in the grass. At this point, your guess as to the weather forecast is as good as ours. That said, 
+A few notes on attire. Weather permitting, the ceremony will take place outside, in the grass. At this point, your guess as to the weather forecast is as good as ours--but our guess is somewhere between hot and comfortable.
 
 ### Sunday, October 30, 2016
 
