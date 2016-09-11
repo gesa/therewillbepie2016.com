@@ -30,7 +30,7 @@ Julian, CA 92036
 
 Reception to follow.
 
-A few notes on attire. Weather permitting, the ceremony will take place outside, in the grass. At this point, your guess as to the weather forecast is as good as ours--but our guess is somewhere between hot and comfortable.
+A few notes on attire. Mostly, we want you to be comfortable and ready to have fun for the evening. The wedding party will be dressed to the nines, so if we have to choose an official label for attire, let's choose somewhere in the range of dressy casual with a slight leaning towards casual. Weather permitting, the ceremony will take place outside, in the grass. At this point, your guess as to the weather forecast is as good as ours--but our guess is somewhere between warm and comfortable.
 
 ### Sunday, October 30, 2016
 
