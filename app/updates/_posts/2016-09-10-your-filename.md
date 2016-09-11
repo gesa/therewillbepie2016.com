@@ -1,6 +1,6 @@
 ---
 published: false
-title: ''
+title: Dress Code Questions
 ---
 ## Dress Code Questions?
 
