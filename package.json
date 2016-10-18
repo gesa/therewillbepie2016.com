@@ -25,33 +25,25 @@
     "build": "grunt build"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-autoprefixer": "^3.0.3",
-    "grunt-cli": "^0.1.13",
-    "grunt-concurrent": "^2.1.0",
-    "grunt-contrib-clean": "^0.7.0",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-connect": "^0.11.2",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-contrib-csslint": "^0.5.0",
-    "grunt-contrib-cssmin": "^0.14.0",
-    "grunt-contrib-jshint": "^0.11.3",
-    "grunt-contrib-less": "^1.2.0",
-    "grunt-contrib-uglify": "^0.11.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-csscss": "^0.6.2",
-    "grunt-jekyll": "^0.4.3",
-    "grunt-jsbeautifier": "^0.2.10",
-    "jit-grunt": "^0.9.1",
-    "time-grunt": "^1.3.0"
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0",
+    "time-grunt": "^1.4.0"
   },
   "dependencies": {
-    "autoprefixer": "^6.3.3",
-    "blueimp-gallery": "^2.18.2",
-    "cssnano": "^3.5.2",
-    "grunt-autoprefixer": "^3.0.4",
+    "autoprefixer": "^6.5.1",
+    "blueimp-gallery": "^2.21.3",
+    "cssnano": "^3.7.7",
+    "grunt": "^1.0.1",
     "grunt-cache-breaker": "^2.0.1",
-    "grunt-concurrent": "^2.2.1",
-    "grunt-postcss": "^0.7.2"
+    "grunt-cli": "^1.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-jekyll": "^0.4.4",
+    "grunt-postcss": "^0.8.0"
   }
 }
